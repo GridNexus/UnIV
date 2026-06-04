@@ -68,6 +68,18 @@ Key dependencies:
 - Transformers
 - SwanLab (experiment tracking)
 
+## Pretrained Weights
+
+Pretrained weights for UnIV multi-dataset training are available on ModelScope:
+
+- [UnIV-multi-datasets](https://www.modelscope.cn/models/nohi191212/UnIV-multi-datasets/summary)
+
+You can download the checkpoint from the ModelScope page, or use the ModelScope SDK:
+
+```bash
+python -c "from modelscope.hub.snapshot_download import snapshot_download; snapshot_download('nohi191212/UnIV-multi-datasets', local_dir='./checkpoints/UnIV-multi-datasets')"
+```
+
 ## Training Pipeline
 
 ### Stage 1: Heterogeneous Distillation
